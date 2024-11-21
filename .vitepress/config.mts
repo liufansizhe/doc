@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "技术文档",
   description: "走走停停的学习记录",
+  base: "/doc/",
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/doc/favicon.ico" }]],
   themeConfig: {
