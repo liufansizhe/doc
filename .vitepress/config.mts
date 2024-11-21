@@ -1,13 +1,14 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "技术文档",
+  description: "走走停停的学习记录",
+  base: "/doc/",
   // header标签里面插入的内容
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/doc/favicon.ico" }]],
   themeConfig: {
     // 网站的logo
-    logo: "/logo.svg",
+    logo: "/D.svg",
     // 文章右侧大纲目录
     outline: {
       level: [2, 6],
@@ -34,10 +35,10 @@ export default defineConfig({
     },
     // 文档的最后更新时间
     lastUpdated: {
-      text: "Updated at",
+      text: "更新于",
       formatOptions: {
         dateStyle: "full",
-        timeStyle: "medium",
+        timeStyle: "short",
       },
     },
     nav: [
@@ -55,6 +56,6 @@ export default defineConfig({
       },
     ],
     // 社交链接
-    socialLinks: [{ icon: "github", link: "https://github.com/ChinaCarlos" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/FFSZ-5/doc" }],
   },
 });
