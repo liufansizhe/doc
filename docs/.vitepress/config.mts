@@ -1,4 +1,8 @@
 import { defineConfig } from "vitepress";
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+} from "vitepress-plugin-group-icons";
 
 export default defineConfig({
   title: "My Awesome Project",
@@ -58,5 +62,13 @@ export default defineConfig({
     // 社交链接
     socialLinks: [{ icon: "github", link: "https://github.com/FFSZ-5/doc" }],
     // 部署的时候需要注意该参数避免样式丢失
+  },
+  markdown: {
+    config(md) {
+      md.use(groupIconMdPlugin);
+    },
+  },
+  vite: {
+    plugins: [groupIconVitePlugin()],
   },
 });
