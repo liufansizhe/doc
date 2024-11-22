@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Doc"
-  text: "learn"
-  tagline: My great project tagline
+  name: "技术文档"
+  text: "记录每一次学习"
+  tagline: "学习留痕"
   image:
     src: /books.png
     alt: VitePress
