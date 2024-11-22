@@ -8,7 +8,7 @@ export default defineConfig({
   title: "技术文档",
   description: "A VitePress Site",
   // header标签里面插入的内容
-  head: [["link", { rel: "icon", href: "/doc/favicon.ico" }]],
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     // 网站的logo
     logo: "/logo.svg",
