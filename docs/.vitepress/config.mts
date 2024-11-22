@@ -5,7 +5,7 @@ import {
 } from "vitepress-plugin-group-icons";
 
 export default defineConfig({
-  title: "My Awesome Project",
+  title: "技术文档",
   description: "A VitePress Site",
   base: "/doc/",
   // header标签里面插入的内容
