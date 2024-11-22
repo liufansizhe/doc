@@ -6,6 +6,9 @@ hero:
   name: "Doc"
   text: "learn"
   tagline: My great project tagline
+  image:
+    src: /books.png
+    alt: VitePress
   actions:
     - theme: brand
       text: Markdown Examples
