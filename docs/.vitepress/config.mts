@@ -7,7 +7,6 @@ import {
 export default defineConfig({
   title: "技术文档",
   description: "A VitePress Site",
-  base: "/doc/",
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/doc/favicon.ico" }]],
   themeConfig: {
