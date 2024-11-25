@@ -12,12 +12,12 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /公务员/行测
+      link: /gwy/xc
 
 features:
   - title: 考公
     details: 学习行测和申论
-    link: /公务员/行测
+    link: /gwy/xc
 ---
 
 <confetti />

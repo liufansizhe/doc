@@ -47,12 +47,12 @@ export default defineConfig({
     nav: [{ text: "首页", link: "/" }],
 
     sidebar: {
-      "/公务员/": [
+      "/gwy/": [
         {
           text: "考公",
           items: [
-            { text: "行测", link: "/公务员/行测.md" },
-            { text: "申论", link: "/公务员/申论.md" },
+            { text: "行测", link: "/gwy/xc.md" },
+            { text: "申论", link: "/gwy/sl.md" },
           ],
         },
       ],
