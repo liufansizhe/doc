@@ -6,7 +6,7 @@ import {
 
 export default defineConfig({
   title: "技术文档",
-  description: "A VitePress Site",
+  description: "学习技术",
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
@@ -34,7 +34,7 @@ export default defineConfig({
     // 页脚
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2023-present China Carlos",
+      copyright: "Copyright © 2024-present LiuFanSiZhe",
     },
     // 文档的最后更新时间
     lastUpdated: {
@@ -44,20 +44,19 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
-    nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
-    ],
+    nav: [{ text: "首页", link: "/" }],
 
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
+    sidebar: {
+      "/公务员/": [
+        {
+          text: "考公",
+          items: [
+            { text: "行测", link: "/公务员/行测.md" },
+            { text: "申论", link: "/公务员/申论.md" },
+          ],
+        },
+      ],
+    },
     // 社交链接
     socialLinks: [{ icon: "github", link: "https://github.com/FFSZ-5/doc" }],
     // 部署的时候需要注意该参数避免样式丢失
