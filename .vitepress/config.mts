@@ -56,6 +56,12 @@ export default defineConfig({
           ],
         },
       ],
+      "/hls/": [
+        {
+          text: "hls源码解析",
+          items: [{ text: "入口文件", link: "/hls/index.md" }],
+        },
+      ],
     },
     // 社交链接
     socialLinks: [{ icon: "github", link: "https://github.com/FFSZ-5/doc" }],
