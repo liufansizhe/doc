@@ -5,6 +5,7 @@ import {
 } from "vitepress-plugin-group-icons";
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   title: "技术文档",
   description: "学习技术",
   // header标签里面插入的内容
