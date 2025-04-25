@@ -12,18 +12,21 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /gwy/xc
+      link: /doc/gwy/xc
 
 features:
-  - title: 考公
-    details: 学习行测和申论
-    link: /gwy/xc
+  - title: vscode开发文档
+    details: 开发vscode插件文档
+    link: /doc/vscode/overview
   - title: hls源码解析
     details: 学习hls源码
-    link: /hls/index
+    link: /doc/hls/index
   - title: docker教程
     details: 学习docker
-    link: /docker/index
+    link: /doc/docker/index
+  - title: 考公
+    details: 学习行测和申论
+    link: /doc/gwy/xc
 ---
 
 <confetti />

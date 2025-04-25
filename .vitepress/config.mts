@@ -47,19 +47,79 @@ export default defineConfig({
     nav: [{ text: "首页", link: "/" }],
 
     sidebar: {
-      "/gwy/": [
+      "/doc/vscode/": [
         {
-          text: "考公",
+          text: "vscode开发文档",
           items: [
-            { text: "行测", link: "/gwy/xc.md" },
-            { text: "申论", link: "/gwy/sl.md" },
+            { text: "概述", link: "/doc/vscode/overview.md" },
+            {
+              text: "开始",
+              link: "/doc/vscode/start/firstExtension.md",
+              collapsed: true,
+              items: [
+                {
+                  text: "您的第一个扩展",
+                  link: "/doc/vscode/start/firstExtension.md",
+                },
+                { text: "扩展刨析", link: "/doc/vscode/start/Anatomy.md" },
+                { text: "结束语", link: "/doc/vscode/start/wrappingUp.md" },
+              ],
+            },
+            {
+              text: "功能扩展",
+              link: "/doc/vscode/capabilities/overview.md",
+              collapsed: true,
+              items: [
+                {
+                  text: "概述",
+                  link: "/doc/vscode/capabilities/overview.md",
+                },
+                {
+                  text: "常见功能",
+                  link: "/doc/vscode/capabilities/common.md",
+                },
+                { text: "主题", link: "/doc/vscode/capabilities/theme.md" },
+                { text: "扩展", link: "/doc/vscode/capabilities/extend.md" },
+              ],
+            },
           ],
         },
       ],
-      "/hls/": [
+      "/doc/gwy/": [
+        {
+          text: "考公",
+          items: [
+            { text: "行测", link: "/doc/gwy/xc.md" },
+            { text: "申论", link: "/doc/gwy/sl.md" },
+          ],
+        },
+      ],
+      "/doc/hls/": [
         {
           text: "hls源码解析",
-          items: [{ text: "入口文件", link: "/hls/index.md" }],
+          items: [{ text: "入口文件", link: "/doc/hls/index.md" }],
+        },
+      ],
+      "/doc/docker/": [
+        {
+          text: "Docker",
+          items: [
+            { text: "简介", link: "/doc/docker/index.md" },
+            { text: "开始", link: "/doc/docker/start.md" },
+            {
+              text: "概念",
+              items: [
+                {
+                  text: "容器",
+                  link: "/doc/docker/container.md",
+                },
+                {
+                  text: "镜像",
+                  link: "/doc/docker/image.md",
+                },
+              ],
+            },
+          ],
         },
       ],
     },
@@ -68,6 +128,13 @@ export default defineConfig({
     // 部署的时候需要注意该参数避免样式丢失
   },
   markdown: {
+    container: {
+      tipLabel: "提示",
+      warningLabel: "警告",
+      dangerLabel: "危险",
+      infoLabel: "信息",
+      detailsLabel: "详细信息",
+    },
     config(md) {
       md.use(groupIconMdPlugin);
     },

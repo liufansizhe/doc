@@ -127,6 +127,7 @@
   --vp-custom-block-tip-text: var(--vp-c-text-1);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+  --vp-c-divider: #52528d;
 }
 
 /**
@@ -138,4 +139,16 @@
 }
 .VPNavBarSearch {
   justify-content: end;
+}
+
+strong {
+  color: rgb(253, 167, 86);
+}
+img {
+  margin: 20px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.vp-adaptive-theme {
+  border: 1px solid rgba(255, 255, 255, 0.493);
 }
