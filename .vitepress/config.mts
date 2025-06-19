@@ -6,8 +6,8 @@ import {
 
 export default defineConfig({
   ignoreDeadLinks: true,
-  title: "技术文档",
-  description: "学习技术",
+  title: "学习文档",
+  description: "学习",
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
@@ -45,9 +45,21 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
-    nav: [{ text: "首页", link: "/" }],
+    nav: [
+      { text: "首页", link: "/" },
+      {
+        text: "导航",
+        items: [{ text: "软考", link: "/doc/rk/profile.md" }],
+      },
+    ],
 
     sidebar: {
+      "/doc/rk/": [
+        {
+          text: "软考",
+          items: [{ text: "简介", link: "/doc/rk/profile.md" }],
+        },
+      ],
       "/doc/vscode/": [
         {
           text: "vscode开发文档",

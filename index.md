@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "技术文档"
+  name: "学习文档"
   text: "记录每一次学习"
   tagline: "学习留痕"
   image:
@@ -27,6 +27,9 @@ features:
   - title: 考公
     details: 学习行测和申论
     link: /doc/gwy/xc
+  - title: 软考
+    details: 软考加油
+    link: /doc/rk/profile
 ---
 
 <confetti />
