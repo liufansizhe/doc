@@ -6,7 +6,7 @@ import {
 
 export default defineConfig({
   ignoreDeadLinks: true,
-  title: "学习文档",
+  title: "留饭同学的博客",
   description: "学习",
   // header标签里面插入的内容
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "学习文档"
+  name: "留饭同学的博客"
   text: "记录每一次学习"
   tagline: "学习留痕"
   image:
